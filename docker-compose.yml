@@ -8,7 +8,7 @@ services:
             NODE_ENV: production
 
         # Change sources here
-        command: ["-o", "bilibili", "kugou", "kuwo", "ytdlp", "bodian","youtube", "youtubedl", "bilivideo", "pyncmd"]
+        command: ["-o", "kuwo", "kugou", "bodian", "pyncmd", "bilibili", "bilivideo"]
 
         ports:
             - ${HTTP_PROXY_PORT:-58080}:8080

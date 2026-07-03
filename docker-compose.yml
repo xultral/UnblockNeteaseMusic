@@ -7,8 +7,8 @@ services:
         environment:
             NODE_ENV: production
 
-        # Change sources here
-        command: ["-o", "kuwo", "kugou", "bodian", "pyncmd", "bilibili", "bilivideo"]
+        # Change sources here  删除了"bilibili", "bilivideo"
+        command: ["-o", "kuwo", "kugou", "bodian", "pyncmd"]
 
         ports:
             - ${HTTP_PROXY_PORT:-58080}:8080
